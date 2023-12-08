@@ -27,11 +27,13 @@ public class Task2_newstyle {
 //6. validate Estimated Arrival shows december 30
 
 
+
     WebDriver driver;
 
     String actual ="Estimated Arrival Any time";
     String  expected;
     String actual2= "By Dec 30";
+
 
 
         @Test
@@ -45,6 +47,7 @@ public class Task2_newstyle {
 
             WebElement search = driver.findElement(By.xpath("//input[@id='global-enhancements-search-query']"));
             search.sendKeys("rings" + Keys.ENTER);
+
 
 
             //3. click Estimated Arrival dropdown

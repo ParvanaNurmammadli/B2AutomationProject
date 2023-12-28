@@ -1,5 +1,6 @@
 package day7_window;
 
+import Utility.BrowserUtils;
 import com.loop.day1_selenium_intro.base.TestBase;
 import org.testng.annotations.Test;
 
@@ -40,7 +41,16 @@ public class T2_window extends TestBase {
                     break;
                 }
             }
+            //
+        BrowserUtils.switchWindowAndValidate(driver, "facebook.com", "facebook");
+
+
+
         }
+
+
+
+
 
 
 
